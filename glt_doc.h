@@ -103,6 +103,26 @@ GLT_ult_id;
 */ 
 GLT_key;
 
+/** @ingroup OBJECTS
+ * @brief The scheduler abstraction.
+*/ 
+GLT_sched;
+
+/** @ingroup OBJECTS
+ * @brief The scheduler configuration abstraction.
+*/ 
+GLT_sched_config;
+
+/** @ingroup OBJECTS
+ * @brief The scheduler definition abstraction.
+*/
+GLT_sched_def;
+
+/** @ingroup OBJECTS
+ * @brief The scheduler predefinition abstraction.
+*/
+GLT_sched_predef;
+
 /**
  * @ingroup LIB
  * @brief   Entry point for the GLT dynamic library.

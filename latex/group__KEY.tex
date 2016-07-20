@@ -4,13 +4,13 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{group__KEY_gacadf8a24eb507018200042230da3e2b2}{glt\-\_\-key\-\_\-create} (void($\ast$destructor)(void $\ast$value), G\-L\-T\-\_\-key $\ast$newkey)
+void \hyperlink{group__KEY_gacadf8a24eb507018200042230da3e2b2}{glt\-\_\-key\-\_\-create} (void($\ast$destructor)(void $\ast$value), \hyperlink{group__OBJECTS_ga3fb7b155abd017c450efc283b3d6666b}{G\-L\-T\-\_\-key} $\ast$newkey)
 \begin{DoxyCompactList}\small\item\em Creates a key. \end{DoxyCompactList}\item 
-void \hyperlink{group__KEY_ga36e5411473e454c0e7ae82992f9dfcbf}{glt\-\_\-key\-\_\-free} (G\-L\-T\-\_\-key $\ast$key)
+void \hyperlink{group__KEY_ga36e5411473e454c0e7ae82992f9dfcbf}{glt\-\_\-key\-\_\-free} (\hyperlink{group__OBJECTS_ga3fb7b155abd017c450efc283b3d6666b}{G\-L\-T\-\_\-key} $\ast$key)
 \begin{DoxyCompactList}\small\item\em Destroys a key. \end{DoxyCompactList}\item 
-void \hyperlink{group__KEY_gaaa5f2bd888a6cd8d8c811bf4a02c9f3f}{glt\-\_\-key\-\_\-set} (G\-L\-T\-\_\-key key, void $\ast$value)
+void \hyperlink{group__KEY_gaaa5f2bd888a6cd8d8c811bf4a02c9f3f}{glt\-\_\-key\-\_\-set} (\hyperlink{group__OBJECTS_ga3fb7b155abd017c450efc283b3d6666b}{G\-L\-T\-\_\-key} key, void $\ast$value)
 \begin{DoxyCompactList}\small\item\em Sets new value to a key. \end{DoxyCompactList}\item 
-void \hyperlink{group__KEY_ga2a3c3de9cfc563501468c2f2aa6cf734}{glt\-\_\-key\-\_\-get} (G\-L\-T\-\_\-key key, void $\ast$$\ast$value)
+void \hyperlink{group__KEY_ga2a3c3de9cfc563501468c2f2aa6cf734}{glt\-\_\-key\-\_\-get} (\hyperlink{group__OBJECTS_ga3fb7b155abd017c450efc283b3d6666b}{G\-L\-T\-\_\-key} key, void $\ast$$\ast$value)
 \begin{DoxyCompactList}\small\item\em Gets value from a key. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -23,7 +23,7 @@ These functions manage the G\-L\-T keys for the U\-L\-Ts.
 \subsubsection[{glt\-\_\-key\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-key\-\_\-create (
 \begin{DoxyParamCaption}
 \item[{void($\ast$)(void $\ast$value)}]{destructor, }
-\item[{G\-L\-T\-\_\-key $\ast$}]{newkey}
+\item[{{\bf G\-L\-T\-\_\-key} $\ast$}]{newkey}
 \end{DoxyParamCaption}
 )}}\label{group__KEY_gacadf8a24eb507018200042230da3e2b2}
 
@@ -41,7 +41,7 @@ Creates a key.
 \index{glt\-\_\-key\-\_\-free@{glt\-\_\-key\-\_\-free}!Key functions@{Key functions}}
 \subsubsection[{glt\-\_\-key\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-key\-\_\-free (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-key $\ast$}]{key}
+\item[{{\bf G\-L\-T\-\_\-key} $\ast$}]{key}
 \end{DoxyParamCaption}
 )}}\label{group__KEY_ga36e5411473e454c0e7ae82992f9dfcbf}
 
@@ -57,7 +57,7 @@ Destroys a key.
 \index{glt\-\_\-key\-\_\-get@{glt\-\_\-key\-\_\-get}!Key functions@{Key functions}}
 \subsubsection[{glt\-\_\-key\-\_\-get}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-key\-\_\-get (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-key}]{key, }
+\item[{{\bf G\-L\-T\-\_\-key}}]{key, }
 \item[{void $\ast$$\ast$}]{value}
 \end{DoxyParamCaption}
 )}}\label{group__KEY_ga2a3c3de9cfc563501468c2f2aa6cf734}
@@ -67,7 +67,7 @@ Gets value from a key.
 
 {\ttfamily \hyperlink{group__KEY_ga2a3c3de9cfc563501468c2f2aa6cf734}{glt\-\_\-key\-\_\-get()}} Gets value from a key. 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em key} & Handle of the target c\textbackslash{} G\-L\-T\-\_\-key. \\
+\mbox{\tt in}  & {\em key} & Handle of the target {\ttfamily G\-L\-T\-\_\-key}. \\
 \hline
 \mbox{\tt out}  & {\em value} & obtained value. \\
 \hline
@@ -76,7 +76,7 @@ Gets value from a key.
 \index{glt\-\_\-key\-\_\-set@{glt\-\_\-key\-\_\-set}!Key functions@{Key functions}}
 \subsubsection[{glt\-\_\-key\-\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-key\-\_\-set (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-key}]{key, }
+\item[{{\bf G\-L\-T\-\_\-key}}]{key, }
 \item[{void $\ast$}]{value}
 \end{DoxyParamCaption}
 )}}\label{group__KEY_gaaa5f2bd888a6cd8d8c811bf4a02c9f3f}
@@ -86,7 +86,7 @@ Sets new value to a key.
 
 {\ttfamily \hyperlink{group__KEY_gaaa5f2bd888a6cd8d8c811bf4a02c9f3f}{glt\-\_\-key\-\_\-set()}} Sets value to a key. 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em key} & Handle of the target c\textbackslash{} G\-L\-T\-\_\-key. \\
+\mbox{\tt in}  & {\em key} & Handle of the target {\ttfamily G\-L\-T\-\_\-key}. \\
 \hline
 \mbox{\tt in}  & {\em value} & to be set. \\
 \hline

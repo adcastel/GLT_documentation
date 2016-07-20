@@ -4,15 +4,15 @@
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{group__MUTEX_ga2f230615e4d7f09011f7222b4ad0bb25}{glt\-\_\-mutex\-\_\-create} (G\-L\-T\-\_\-mutex $\ast$mutex)
+void \hyperlink{group__MUTEX_ga2f230615e4d7f09011f7222b4ad0bb25}{glt\-\_\-mutex\-\_\-create} (\hyperlink{group__OBJECTS_ga17fa54e8d474f0313c629c34c119f0c8}{G\-L\-T\-\_\-mutex} $\ast$mutex)
 \begin{DoxyCompactList}\small\item\em Creates a mutex. \end{DoxyCompactList}\item 
-void \hyperlink{group__MUTEX_ga337c654c561a5f8a6f7c2dd0a7012650}{glt\-\_\-mutex\-\_\-lock} (G\-L\-T\-\_\-mutex mutex)
+void \hyperlink{group__MUTEX_ga337c654c561a5f8a6f7c2dd0a7012650}{glt\-\_\-mutex\-\_\-lock} (\hyperlink{group__OBJECTS_ga17fa54e8d474f0313c629c34c119f0c8}{G\-L\-T\-\_\-mutex} mutex)
 \begin{DoxyCompactList}\small\item\em Locks a mutex. \end{DoxyCompactList}\item 
-void \hyperlink{group__MUTEX_gad18039d55ed2b243ef1a8904f2bf4082}{glt\-\_\-mutex\-\_\-unlock} (G\-L\-T\-\_\-mutex mutex)
+void \hyperlink{group__MUTEX_gad18039d55ed2b243ef1a8904f2bf4082}{glt\-\_\-mutex\-\_\-unlock} (\hyperlink{group__OBJECTS_ga17fa54e8d474f0313c629c34c119f0c8}{G\-L\-T\-\_\-mutex} mutex)
 \begin{DoxyCompactList}\small\item\em Unlocks a mutex. \end{DoxyCompactList}\item 
-void \hyperlink{group__MUTEX_ga4e22bebb15e26d508d6283967a0d43f9}{glt\-\_\-mutex\-\_\-free} (G\-L\-T\-\_\-mutex $\ast$mutex)
+void \hyperlink{group__MUTEX_ga4e22bebb15e26d508d6283967a0d43f9}{glt\-\_\-mutex\-\_\-free} (\hyperlink{group__OBJECTS_ga17fa54e8d474f0313c629c34c119f0c8}{G\-L\-T\-\_\-mutex} $\ast$mutex)
 \begin{DoxyCompactList}\small\item\em Destroys a mutex. \end{DoxyCompactList}\item 
-void \hyperlink{group__MUTEX_ga6b91862c97da21affe0adeecceb616ad}{glt\-\_\-mutex\-\_\-trylock} (G\-L\-T\-\_\-bool $\ast$locked, G\-L\-T\-\_\-mutex mutex)
+void \hyperlink{group__MUTEX_ga6b91862c97da21affe0adeecceb616ad}{glt\-\_\-mutex\-\_\-trylock} (\hyperlink{group__OBJECTS_ga64121a8c1742a545436e128bcbfd6131}{G\-L\-T\-\_\-bool} $\ast$locked, \hyperlink{group__OBJECTS_ga17fa54e8d474f0313c629c34c119f0c8}{G\-L\-T\-\_\-mutex} mutex)
 \begin{DoxyCompactList}\small\item\em Tries to lock a mutex. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -24,7 +24,7 @@ These functions manage the G\-L\-T mutexes for the U\-L\-Ts.
 \index{glt\-\_\-mutex\-\_\-create@{glt\-\_\-mutex\-\_\-create}!Mutex functions@{Mutex functions}}
 \subsubsection[{glt\-\_\-mutex\-\_\-create}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-mutex\-\_\-create (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-mutex $\ast$}]{mutex}
+\item[{{\bf G\-L\-T\-\_\-mutex} $\ast$}]{mutex}
 \end{DoxyParamCaption}
 )}}\label{group__MUTEX_ga2f230615e4d7f09011f7222b4ad0bb25}
 
@@ -40,7 +40,7 @@ Creates a mutex.
 \index{glt\-\_\-mutex\-\_\-free@{glt\-\_\-mutex\-\_\-free}!Mutex functions@{Mutex functions}}
 \subsubsection[{glt\-\_\-mutex\-\_\-free}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-mutex\-\_\-free (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-mutex $\ast$}]{mutex}
+\item[{{\bf G\-L\-T\-\_\-mutex} $\ast$}]{mutex}
 \end{DoxyParamCaption}
 )}}\label{group__MUTEX_ga4e22bebb15e26d508d6283967a0d43f9}
 
@@ -56,7 +56,7 @@ Destroys a mutex.
 \index{glt\-\_\-mutex\-\_\-lock@{glt\-\_\-mutex\-\_\-lock}!Mutex functions@{Mutex functions}}
 \subsubsection[{glt\-\_\-mutex\-\_\-lock}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-mutex\-\_\-lock (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-mutex}]{mutex}
+\item[{{\bf G\-L\-T\-\_\-mutex}}]{mutex}
 \end{DoxyParamCaption}
 )}}\label{group__MUTEX_ga337c654c561a5f8a6f7c2dd0a7012650}
 
@@ -72,8 +72,8 @@ Locks a mutex.
 \index{glt\-\_\-mutex\-\_\-trylock@{glt\-\_\-mutex\-\_\-trylock}!Mutex functions@{Mutex functions}}
 \subsubsection[{glt\-\_\-mutex\-\_\-trylock}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-mutex\-\_\-trylock (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-bool $\ast$}]{locked, }
-\item[{G\-L\-T\-\_\-mutex}]{mutex}
+\item[{{\bf G\-L\-T\-\_\-bool} $\ast$}]{locked, }
+\item[{{\bf G\-L\-T\-\_\-mutex}}]{mutex}
 \end{DoxyParamCaption}
 )}}\label{group__MUTEX_ga6b91862c97da21affe0adeecceb616ad}
 
@@ -91,7 +91,7 @@ Tries to lock a mutex.
 \index{glt\-\_\-mutex\-\_\-unlock@{glt\-\_\-mutex\-\_\-unlock}!Mutex functions@{Mutex functions}}
 \subsubsection[{glt\-\_\-mutex\-\_\-unlock}]{\setlength{\rightskip}{0pt plus 5cm}void glt\-\_\-mutex\-\_\-unlock (
 \begin{DoxyParamCaption}
-\item[{G\-L\-T\-\_\-mutex}]{mutex}
+\item[{{\bf G\-L\-T\-\_\-mutex}}]{mutex}
 \end{DoxyParamCaption}
 )}}\label{group__MUTEX_gad18039d55ed2b243ef1a8904f2bf4082}
 

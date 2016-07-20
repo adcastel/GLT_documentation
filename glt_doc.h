@@ -44,6 +44,65 @@
  * These functions manage the GLT keys for the ULTs.
  */
 
+/** \defgroup OBJECTS GLT object list
+ */
+
+
+/** @ingroup OBJECTS
+ * @brief The user level thread abstraction.
+*/ 
+GLT_ult;
+
+/** @ingroup OBJECTS
+ * @brief The tasklet abstraction.
+*/ 
+GLT_tasklet;
+
+/** @ingroup OBJECTS
+ * @brief The  thread abstraction.
+*/ 
+GLT_thread;
+
+/** @ingroup OBJECTS
+ * @brief The mutex abstraction.
+*/ 
+GLT_mutex;
+
+/** @ingroup OBJECTS
+ * @brief The barrier abstraction.
+*/ 
+GLT_barrier;
+
+/** @ingroup OBJECTS
+ * @brief The condition abstraction.
+*/ 
+GLT_cond;
+
+/** @ingroup OBJECTS
+ * @brief The timer abstraction.
+*/ 
+GLT_timer;
+
+/** @ingroup OBJECTS
+ * @brief The boolean abstraction.
+*/ 
+GLT_bool;
+
+/** @ingroup OBJECTS
+ * @brief The thread id abstraction.
+*/ 
+GLT_thread_id;
+
+/** @ingroup OBJECTS
+ * @brief The ult id abstraction.
+*/ 
+GLT_ult_id;
+
+/** @ingroup OBJECTS
+ * @brief The key abstraction.
+*/ 
+GLT_key;
+
 /**
  * @ingroup LIB
  * @brief   Entry point for the GLT dynamic library.
@@ -51,7 +110,7 @@
  * \c glt_start() is the first called function when the GLT dynamic library is
  * loaded
  */
-void __attribute__((constructor)) glt_start(void);
+void glt_start(void);
 
 /**
  * @ingroup LIB
@@ -60,7 +119,7 @@ void __attribute__((constructor)) glt_start(void);
  * \c glt_end() is the last called function when the GLT dynamic library is
  * unloaded
  */
-void __attribute__((destructor)) glt_end(void);
+void glt_end(void);
 
 /**
  * @ingroup LIB
@@ -422,7 +481,7 @@ void glt_timer_get_secs(GLT_timer timer, double *secs);
  * @brief Obtains the number of the current thread.
  *
  * \c glt_get_thread_num() returns the number of the current thread.
- * @return  The number of the current c\ GLT_thread.
+ * @return  The number of the current \c GLT_thread.
  */
 int glt_get_thread_num();
 
@@ -430,7 +489,7 @@ int glt_get_thread_num();
  * @brief Returns the total number of threads.
  *
  * \c glt_get_num_threads() returns the number threads.
- * @return  The number of c\ GLT_threads.
+ * @return  The number of \c GLT_threads.
  */
 int glt_get_num_threads();
 
@@ -438,7 +497,7 @@ int glt_get_num_threads();
  * @brief Destroys the scheduler configuration.
  *
  * \c glt_scheduler_config_free() deletes the scheduler configuration.
- * @param[in]  config Handle of the target c\ GLT_sched_config.
+ * @param[in]  config Handle of the target \c GLT_sched_config.
  */
 void glt_scheduler_config_free(GLT_sched_config *config);
 
@@ -446,11 +505,11 @@ void glt_scheduler_config_free(GLT_sched_config *config);
  * @brief Creates a new scheduler.
  *
  * \c glt_scheduler_create() creates a new scheduler for some threads.
- * @param[in]  def Handle of the target c\ GLT_sched_def.
+ * @param[in]  def Handle of the target \c GLT_sched_def.
  * @param[in]  num_threads number of \c GLT_thread affected by this scheduler.
- * @param[in]  threads_id pointer to an array of c\ GLT_threads_id.
- * @param[in]  config Handle of the target c\ GLT_sched_config.
- * @param[out]  newsched Handle of new c\ GLT_sched.
+ * @param[in]  threads_id pointer to an array of \c GLT_threads_id.
+ * @param[in]  config Handle of the target \c GLT_sched_config.
+ * @param[out]  newsched Handle of new \c GLT_sched.
  */
 void glt_scheduler_create(GLT_sched_def *def, int num_threads,
         int *threads_id, GLT_sched_config config, GLT_sched *newsched);
@@ -460,11 +519,11 @@ void glt_scheduler_create(GLT_sched_def *def, int num_threads,
  *
  * \c glt_schededuler_create_basic() creates a new scheduler for some threads with
  * a predefined behaviour.
- * @param[in]  def Handle of the target c\ GLT_sched_predef.
+ * @param[in]  def Handle of the target \c GLT_sched_predef.
  * @param[in]  num_threads number of \c GLT_thread affected by this scheduler.
- * @param[in]  threads_id pointer to an array of c\ GLT_threads_id.
- * @param[in]  config Handle of the target c\ GLT_sched_config.
- * @param[out]  newsched Handle of new c\ GLT_sched.
+ * @param[in]  threads_id pointer to an array of \c GLT_threads_id.
+ * @param[in]  config Handle of the target \c GLT_sched_config.
+ * @param[out]  newsched Handle of new \c GLT_sched.
  */
 void glt_schededuler_create_basic(GLT_sched_predef predef,
         int num_threads, int *threads_id, GLT_sched_config config,
@@ -474,7 +533,7 @@ void glt_schededuler_create_basic(GLT_sched_predef predef,
  * @brief Destroys a scheduler.
  *
  * \c glt_scheduler_free() destroys a scheduler.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  */
 
 void glt_scheduler_free(GLT_sched *sched);
@@ -483,7 +542,7 @@ void glt_scheduler_free(GLT_sched *sched);
  * @brief Finalizes a scheduler.
  *
  * \c glt_scheduler_finish() finalizes a scheduler.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  */
 void glt_scheduler_finish(GLT_sched sched);
 
@@ -491,7 +550,7 @@ void glt_scheduler_finish(GLT_sched sched);
  * @brief Stops a scheduler.
  *
  * \c glt_scheduler_exit() Stops a scheduler.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  */
 void glt_scheduler_exit(GLT_sched sched);
 
@@ -499,7 +558,7 @@ void glt_scheduler_exit(GLT_sched sched);
  * @brief Requires to a scheduler to stop.
  *
  * \c glt_scheduler_has_to_stop() Requires a scheduler to stop.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  * @param[out]  stop shows the answer of the scheduler.
  */
 void glt_scheduler_has_to_stop(GLT_sched sched, GLT_bool *stop);
@@ -508,7 +567,7 @@ void glt_scheduler_has_to_stop(GLT_sched sched, GLT_bool *stop);
  * @brief Sets new data to a scheduler.
  *
  * \c glt_scheduler_set_data() Sets data to a scheduler.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  * @param[in]  data to be set.
  */
 void glt_scheduler_set_data(GLT_sched sched, void *data);
@@ -517,7 +576,7 @@ void glt_scheduler_set_data(GLT_sched sched, void *data);
  * @brief gets data from a scheduler.
  *
  * \c glt_scheduler_get_data() gets data from a scheduler.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  * @param[out] data obtained.
  */
 void glt_scheduler_get_data(GLT_sched sched, void **data);
@@ -526,7 +585,7 @@ void glt_scheduler_get_data(GLT_sched sched, void **data);
  * @brief gets the current size from the scheduler.
  *
  * \c glt_scheduler_get_size() gets size from a scheduler.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  * @param[out] size obtained.
  */
 void glt_scheduler_get_size(GLT_sched sched, size_t *size);
@@ -535,7 +594,7 @@ void glt_scheduler_get_size(GLT_sched sched, size_t *size);
  * @brief gets the total size from the scheduler.
  *
  * \c glt_scheduler_get_total_size() gets the total size from a scheduler.
- * @param[in]  sched Handle of the target c\ GLT_sched.
+ * @param[in]  sched Handle of the target \c GLT_sched.
  * @param[out] size obtained.
  */
 void glt_scheduler_get_total_size(GLT_sched sched, size_t *size);
@@ -561,7 +620,7 @@ void glt_key_free(GLT_key *key);
  * @brief Sets new value to a key.
  *
  * \c glt_key_set() Sets value to a key.
- * @param[in]  key Handle of the target c\ GLT_key.
+ * @param[in]  key Handle of the target \c GLT_key.
  * @param[in]  value to be set.
  */
 void glt_key_set(GLT_key key, void *value);
@@ -570,7 +629,7 @@ void glt_key_set(GLT_key key, void *value);
  * @brief Gets value from a key.
  *
  * \c glt_key_get() Gets value from a key.
- * @param[in]  key Handle of the target c\ GLT_key.
+ * @param[in]  key Handle of the target \c GLT_key.
  * @param[out]  value obtained value.
  */
 void glt_key_get(GLT_key key, void **value);

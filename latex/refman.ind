@@ -1,10 +1,5 @@
 \begin{theindex}
 
-  \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}
-    \subitem {Library functions}, \hyperpage{5}
-
-  \indexspace
-
   \item {Barrier functions}, \hyperpage{7}
     \subitem {glt\discretionary {-}{}{}\_\discretionary {-}{}{}barrier\discretionary {-}{}{}\_\discretionary {-}{}{}create}, 
 		\hyperpage{7}
@@ -29,6 +24,8 @@
 
   \indexspace
 
+  \item {G\discretionary {-}{}{}L\discretionary {-}{}{}T object list}, 
+		\hyperpage{27}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}barrier\discretionary {-}{}{}\_\discretionary {-}{}{}create}
     \subitem {Barrier functions}, \hyperpage{7}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}barrier\discretionary {-}{}{}\_\discretionary {-}{}{}free}
@@ -45,6 +42,8 @@
     \subitem {Condition functions}, \hyperpage{8}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}cond\discretionary {-}{}{}\_\discretionary {-}{}{}wait}
     \subitem {Condition functions}, \hyperpage{9}
+  \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}end}
+    \subitem {Library functions}, \hyperpage{5}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}finalize}
     \subitem {Library functions}, \hyperpage{5}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}num\discretionary {-}{}{}\_\discretionary {-}{}{}threads}
@@ -95,6 +94,8 @@
     \subitem {Scheduler functions}, \hyperpage{23}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}scheduler\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}\_\discretionary {-}{}{}data}
     \subitem {Scheduler functions}, \hyperpage{23}
+  \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}start}
+    \subitem {Library functions}, \hyperpage{6}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}tasklet\discretionary {-}{}{}\_\discretionary {-}{}{}cancel}
     \subitem {Work-\/units functions}, \hyperpage{12}
   \item {glt\discretionary {-}{}{}\_\discretionary {-}{}{}tasklet\discretionary {-}{}{}\_\discretionary {-}{}{}create}
@@ -157,12 +158,14 @@
   \indexspace
 
   \item {Library functions}, \hyperpage{5}
-    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}, 
+    \subitem {glt\discretionary {-}{}{}\_\discretionary {-}{}{}end}, 
 		\hyperpage{5}
     \subitem {glt\discretionary {-}{}{}\_\discretionary {-}{}{}finalize}, 
 		\hyperpage{5}
     \subitem {glt\discretionary {-}{}{}\_\discretionary {-}{}{}init}, 
 		\hyperpage{5}
+    \subitem {glt\discretionary {-}{}{}\_\discretionary {-}{}{}start}, 
+		\hyperpage{6}
 
   \indexspace
 

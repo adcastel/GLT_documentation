@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>Generic Lightweight Thread (GLT) Library: README</title>
+<title>My Project: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Generic Lightweight Thread (GLT) Library
-   &#160;<span id="projectnumber">2.5</span>
+   <div id="projectname">My Project
    </div>
-   <div id="projectbrief">A common API for Lightweight Thread solutions</div>
   </td>
  </tr>
  </tbody>
@@ -81,11 +79,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>GLT (Generic Lightweight Threads). Common API for Lightweight Thread Implementations.</p>
-<p>Developed by: Adrian Castello (<a href="#" onclick="location.href='mai'+'lto:'+'adc'+'as'+'tel'+'@u'+'ji.'+'es'; return false;">adcas<span style="display: none;">.nosp@m.</span>tel@<span style="display: none;">.nosp@m.</span>uji.e<span style="display: none;">.nosp@m.</span>s</a>) at Universitat Jaume I Supervised by: Antonio J. Peña (<a href="#" onclick="location.href='mai'+'lto:'+'ant'+'on'+'io.'+'pe'+'na@'+'bs'+'c.e'+'s'; return false;">anton<span style="display: none;">.nosp@m.</span>io.p<span style="display: none;">.nosp@m.</span>ena@b<span style="display: none;">.nosp@m.</span>sc.e<span style="display: none;">.nosp@m.</span>s</a>) at Barcelona Supercomputing Center Rafael Mayo Gual and Enrique S. Quintana-Ortí ({mayo,quintana}.es) Sangmin Seo and Pavan Balaji ({sseo,balaji}.gov) at Argonne National Laboratory </p>
-<hr/>
- <pre class="fragment">        GLT Release 2.0
-</pre><p>GLT is a common API for HPC lightweight thread (LWT) libraries. It supports MassiveThreads, Qthreads, and Argobots as underlying LWT solutions. Moreover, GLT over Pthread is implemented with comparative purpose.</p>
-<p>In addition, GLT can be used as POSIX threads API since version 2.0.</p>
+<ul>
+<li>Developed by:<ul>
+<li>Adrian Castello (<a href="#" onclick="location.href='mai'+'lto:'+'adc'+'as'+'tel'+'@u'+'ji.'+'es'; return false;">adcas<span style="display: none;">.nosp@m.</span>tel@<span style="display: none;">.nosp@m.</span>uji.e<span style="display: none;">.nosp@m.</span>s</a>) at Universitat Jaume I</li>
+</ul>
+</li>
+<li>Supervised by:<ul>
+<li>Antonio J. Peña (<a href="#" onclick="location.href='mai'+'lto:'+'ant'+'on'+'io.'+'pe'+'na@'+'bs'+'c.e'+'s'; return false;">anton<span style="display: none;">.nosp@m.</span>io.p<span style="display: none;">.nosp@m.</span>ena@b<span style="display: none;">.nosp@m.</span>sc.e<span style="display: none;">.nosp@m.</span>s</a>) at Barcelona Supercomputing Center</li>
+<li>Rafael Mayo Gual and Enrique S. Quintana-Ortí ({mayo,quintana}@uji.es)</li>
+<li>Sangmin Seo and Pavan Balaji ({sseo,balaji}@anl.gov) at Argonne National Laboratory <hr/>
+</li>
+</ul>
+</li>
+</ul>
+<h1>GLT Release 2.5 </h1>
+<p>GLT is a common API for HPC lightweight thread (LWT) libraries. It supports MassiveThreads, Qthreads, and Argobots as underlying LWT solutions. Moreover, GLT over Pthread is implemented with comparative purpose.</p>
+<p>In addition, GLT can be used as POSIX threads API since version 2.5.</p>
 <ol type="1">
 <li>Getting Started</li>
 <li>How to use GLT</li>
@@ -95,24 +104,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ol>
 <h1>1. Getting Started </h1>
 <p>The following instructions take you through a sequence of steps to get GLT installed and compiled.</p>
-<p>(a) You will need the following prerequisites. </p>
-<pre class="fragment">- REQUIRED: This tar file GLT-1.0.tar.gz
+<p>(a.1) You will need the following prerequisites. </p>
+<pre class="fragment">- REQUIRED: This tar file GLT-2.5.tar.gz
 
 - REQUIRED: A C compiler (gcc is sufficient)
+</pre><p>(a.2) At least one of these libraries: </p>
+<pre class="fragment">- Argobots library.
 
-- REQUIRED: An Argobots library installation
+- Qthreads library.
 
-- REQUIRED: A Qthreads library installation
-
-- REQUIRED: A MassiveThreads library installation
+- MassiveThreads library.
 </pre><p>(b) Unpack the tar file and go to the top level directory: </p>
-<pre class="fragment">  tar xzf GLT-2.0.tar.gz
+<pre class="fragment">  tar xzf GLT-2.5.tar.gz
   cd GLT 
-
-If your tar doesn't accept the z option, use
-
-  gunzip GLT-2.0.tar.gz
-  tar xf GLT-2.0.tar
+</pre><p>If your tar doesn't accept the z option, use </p>
+<pre class="fragment">  gunzip GLT-2.5.tar.gz
+  tar xf GLT-2.5.tar
   cd GLT
 </pre><p>(c) Define environment variables: </p>
 <pre class="fragment">The definition of the HOME_ARG, HOME_QTH, and HOME_MTH environment 
@@ -144,7 +151,7 @@ for bash and sh:
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 21 2016 08:47:04 for Generic Lightweight Thread (GLT) Library by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 21 2016 09:38:43 for My Project by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

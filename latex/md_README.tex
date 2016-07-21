@@ -1,14 +1,26 @@
 G\-L\-T (Generic Lightweight Threads). Common A\-P\-I for Lightweight Thread Implementations.
 
-Developed by\-: Adrian Castello (\href{mailto:adcastel@uji.es}{\tt adcastel@uji.\-es}) at Universitat Jaume I Supervised by\-: Antonio J. Peña (\href{mailto:antonio.pena@bsc.es}{\tt antonio.\-pena@bsc.\-es}) at Barcelona Supercomputing Center Rafael Mayo Gual and Enrique S. Quintana-\/\-Ortí (\{mayo,quintana\}.es) Sangmin Seo and Pavan Balaji (\{sseo,balaji\}.gov) at Argonne National Laboratory 
 
- \begin{DoxyVerb}        GLT Release 2.0
-\end{DoxyVerb}
+\begin{DoxyItemize}
+\item Developed by\-:
+\begin{DoxyItemize}
+\item Adrian Castello (\href{mailto:adcastel@uji.es}{\tt adcastel@uji.\-es}) at Universitat Jaume I
+\end{DoxyItemize}
+\item Supervised by\-:
+\begin{DoxyItemize}
+\item Antonio J. Peña (\href{mailto:antonio.pena@bsc.es}{\tt antonio.\-pena@bsc.\-es}) at Barcelona Supercomputing Center
+\item Rafael Mayo Gual and Enrique S. Quintana-\/\-Ortí (\{mayo,quintana\}@uji.\-es)
+\item Sangmin Seo and Pavan Balaji (\{sseo,balaji\}@anl.\-gov) at Argonne National Laboratory 
 
+
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+\section*{G\-L\-T Release 2.\-5 }
 
 G\-L\-T is a common A\-P\-I for H\-P\-C lightweight thread (L\-W\-T) libraries. It supports Massive\-Threads, Qthreads, and Argobots as underlying L\-W\-T solutions. Moreover, G\-L\-T over Pthread is implemented with comparative purpose.
 
-In addition, G\-L\-T can be used as P\-O\-S\-I\-X threads A\-P\-I since version 2.\-0.
+In addition, G\-L\-T can be used as P\-O\-S\-I\-X threads A\-P\-I since version 2.\-5.
 
 
 \begin{DoxyEnumerate}
@@ -24,25 +36,27 @@ In addition, G\-L\-T can be used as P\-O\-S\-I\-X threads A\-P\-I since version 
 
 The following instructions take you through a sequence of steps to get G\-L\-T installed and compiled.
 
-(a) You will need the following prerequisites. \begin{DoxyVerb}- REQUIRED: This tar file GLT-1.0.tar.gz
+(a.\-1) You will need the following prerequisites. \begin{DoxyVerb}- REQUIRED: This tar file GLT-2.5.tar.gz
 
 - REQUIRED: A C compiler (gcc is sufficient)
-
-- REQUIRED: An Argobots library installation
-
-- REQUIRED: A Qthreads library installation
-
-- REQUIRED: A MassiveThreads library installation
 \end{DoxyVerb}
 
 
-(b) Unpack the tar file and go to the top level directory\-: \begin{DoxyVerb}  tar xzf GLT-2.0.tar.gz
+(a.\-2) At least one of these libraries\-: \begin{DoxyVerb}- Argobots library.
+
+- Qthreads library.
+
+- MassiveThreads library.
+\end{DoxyVerb}
+
+
+(b) Unpack the tar file and go to the top level directory\-: \begin{DoxyVerb}  tar xzf GLT-2.5.tar.gz
   cd GLT 
+\end{DoxyVerb}
 
-If your tar doesn't accept the z option, use
 
-  gunzip GLT-2.0.tar.gz
-  tar xf GLT-2.0.tar
+If your tar doesn't accept the z option, use \begin{DoxyVerb}  gunzip GLT-2.5.tar.gz
+  tar xf GLT-2.5.tar
   cd GLT
 \end{DoxyVerb}
 

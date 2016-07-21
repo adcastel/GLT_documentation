@@ -1,14 +1,14 @@
-\contentsline {chapter}{\numberline {1}G\discretionary {-}{}{}L\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}documentation}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}R\discretionary {-}{}{}E\discretionary {-}{}{}A\discretionary {-}{}{}D\discretionary {-}{}{}M\discretionary {-}{}{}E}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Module Index}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Modules}{3}{section.2.1}
 \contentsline {chapter}{\numberline {3}Module Documentation}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Library functions}{5}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}Function Documentation}{5}{subsection.3.1.2}
-\contentsline {subsubsection}{\numberline {3.1.2.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{5}{subsubsection.3.1.2.1}
-\contentsline {subsubsection}{\numberline {3.1.2.2}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}attribute\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}\_\discretionary {-}{}{}}{5}{subsubsection.3.1.2.2}
-\contentsline {subsubsection}{\numberline {3.1.2.3}glt\discretionary {-}{}{}\_\discretionary {-}{}{}finalize}{5}{subsubsection.3.1.2.3}
-\contentsline {subsubsection}{\numberline {3.1.2.4}glt\discretionary {-}{}{}\_\discretionary {-}{}{}init}{6}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.1}glt\discretionary {-}{}{}\_\discretionary {-}{}{}end}{5}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}glt\discretionary {-}{}{}\_\discretionary {-}{}{}finalize}{5}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}glt\discretionary {-}{}{}\_\discretionary {-}{}{}init}{5}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.4}glt\discretionary {-}{}{}\_\discretionary {-}{}{}start}{6}{subsubsection.3.1.2.4}
 \contentsline {section}{\numberline {3.2}Barrier functions}{7}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Detailed Description}{7}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Function Documentation}{7}{subsection.3.2.2}
@@ -87,4 +87,6 @@
 \contentsline {subsubsection}{\numberline {3.9.2.2}glt\discretionary {-}{}{}\_\discretionary {-}{}{}key\discretionary {-}{}{}\_\discretionary {-}{}{}free}{25}{subsubsection.3.9.2.2}
 \contentsline {subsubsection}{\numberline {3.9.2.3}glt\discretionary {-}{}{}\_\discretionary {-}{}{}key\discretionary {-}{}{}\_\discretionary {-}{}{}get}{25}{subsubsection.3.9.2.3}
 \contentsline {subsubsection}{\numberline {3.9.2.4}glt\discretionary {-}{}{}\_\discretionary {-}{}{}key\discretionary {-}{}{}\_\discretionary {-}{}{}set}{25}{subsubsection.3.9.2.4}
-\contentsline {chapter}{Index}{27}{section*.11}
+\contentsline {section}{\numberline {3.10}G\discretionary {-}{}{}L\discretionary {-}{}{}T object list}{27}{section.3.10}
+\contentsline {subsection}{\numberline {3.10.1}Detailed Description}{27}{subsection.3.10.1}
+\contentsline {chapter}{Index}{28}{section*.17}

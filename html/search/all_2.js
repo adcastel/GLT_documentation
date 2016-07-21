@@ -73,6 +73,5 @@ var searchData=
   ['glt_5fworkunit_5fget_5fthread_5fid',['glt_workunit_get_thread_id',['../group__WORKUNIT.html#gaed08a54f94a57450eeec8a3cf5c0b167',1,'glt_doc.h']]],
   ['glt_5fyield',['glt_yield',['../group__WORKUNIT.html#gac1358e0fbff9e9d05087ec4cbe7b40fc',1,'glt_doc.h']]],
   ['glt_5fyield_5fto',['glt_yield_to',['../group__WORKUNIT.html#gaa66f172d44a8672ae737905e8f19bda2',1,'glt_doc.h']]],
-  ['glt_5fdocumentation',['GLT_documentation',['../md_README.html',1,'']]],
   ['glt_20object_20list',['GLT object list',['../group__OBJECTS.html',1,'']]]
 ];

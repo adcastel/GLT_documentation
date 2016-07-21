@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timer_20functions',['Timer functions',['../group__TIMER.html',1,'']]]
+  ['scheduler_20functions',['Scheduler functions',['../group__SCHED.html',1,'']]]
 ];

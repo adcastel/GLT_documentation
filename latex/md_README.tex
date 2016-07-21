@@ -1,0 +1,96 @@
+G\-L\-T (Generic Lightweight Threads). Common A\-P\-I for Lightweight Thread Implementations.
+
+Developed by\-: Adrian Castello (\href{mailto:adcastel@uji.es}{\tt adcastel@uji.\-es}) at Universitat Jaume I Supervised by\-: Antonio J. Peña (\href{mailto:antonio.pena@bsc.es}{\tt antonio.\-pena@bsc.\-es}) at Barcelona Supercomputing Center Rafael Mayo Gual and Enrique S. Quintana-\/\-Ortí (\{mayo,quintana\}.es) Sangmin Seo and Pavan Balaji (\{sseo,balaji\}.gov) at Argonne National Laboratory 
+
+ \begin{DoxyVerb}        GLT Release 2.0
+\end{DoxyVerb}
+
+
+G\-L\-T is a common A\-P\-I for H\-P\-C lightweight thread (L\-W\-T) libraries. It supports Massive\-Threads, Qthreads, and Argobots as underlying L\-W\-T solutions. Moreover, G\-L\-T over Pthread is implemented with comparative purpose.
+
+In addition, G\-L\-T can be used as P\-O\-S\-I\-X threads A\-P\-I since version 2.\-0.
+
+
+\begin{DoxyEnumerate}
+\item Getting Started
+\item How to use G\-L\-T
+\item How to cite G\-L\-T
+\item Reporting Problems 
+
+
+\end{DoxyEnumerate}
+
+\section*{1. Getting Started }
+
+The following instructions take you through a sequence of steps to get G\-L\-T installed and compiled.
+
+(a) You will need the following prerequisites. \begin{DoxyVerb}- REQUIRED: This tar file GLT-1.0.tar.gz
+
+- REQUIRED: A C compiler (gcc is sufficient)
+
+- REQUIRED: An Argobots library installation
+
+- REQUIRED: A Qthreads library installation
+
+- REQUIRED: A MassiveThreads library installation
+\end{DoxyVerb}
+
+
+(b) Unpack the tar file and go to the top level directory\-: \begin{DoxyVerb}  tar xzf GLT-2.0.tar.gz
+  cd GLT 
+
+If your tar doesn't accept the z option, use
+
+  gunzip GLT-2.0.tar.gz
+  tar xf GLT-2.0.tar
+  cd GLT
+\end{DoxyVerb}
+
+
+(c) Define environment variables\-: \begin{DoxyVerb}The definition of the HOME_ARG, HOME_QTH, and HOME_MTH environment 
+variables with the path to Argobots, Qthreads, and MassiveThreads 
+libraries respectively is required.
+\end{DoxyVerb}
+
+
+(d) Build G\-L\-T\-: \begin{DoxyVerb}cd src
+
+for csh and tcsh:
+
+  make [arg|qth|mth|pth] |& tee m.txt
+
+for bash and sh:
+
+  make [arg|qth|mth|pth] 2>&1 | tee m.txt
+\end{DoxyVerb}
+
+
+
+
+
+
+\section*{2. How to use G\-L\-T }
+
+I. G\-L\-T offers two library approaches\-:
+
+(a) Dynamic library. Once the step 1 is completed, a libglt.\-so file can be found in each underlying library folder. The glt.\-h file needs to be included in the user's code and the -\/lglt flag added to the compilation order.
+
+(d) Static library. In order to use this performance-\/oriented implementation fast\-\_\-glt.\-h file may be included in the user's code and the -\/\-D\-F\-A\-S\-T\-G\-L\-T flag added to the compilation order.
+
+I\-I. Using Pthreads A\-P\-I with G\-L\-T
+
+G\-L\-T also offers the use of code written with pthreads just including \char`\"{}glt\-\_\-pthreads.\-h\char`\"{} instead of \char`\"{}pthread.\-h\char`\"{}
+
+
+
+
+
+\section*{3. How to cite G\-L\-T }
+
+To cite G\-L\-T in your work, please use the following for now\-: A. Castelló, A.\-J. Peña, S. Seo, R. Mayo, P. Balaji, E.\-S. Quintana-\/\-Ortí. G\-L\-T\-: A common A\-P\-I for lightweight thread libraries. www.\-hpca.\-uji.\-es/\-G\-L\-T. 2016 
+
+
+
+\section*{4. Reporting Problems }
+
+If you have problems with the installation or usage of G\-L\-T, please send an email to \href{mailto:adcastel@uji.es}{\tt adcastel@uji.\-es}. 

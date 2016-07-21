@@ -1,6 +1,6 @@
 #!/bin/bash
 
-doxygen glt_doc.h
+doxygen Doxyfile glt_doc.h
 
 cd latex
 
